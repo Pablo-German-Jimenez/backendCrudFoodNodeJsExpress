@@ -1,0 +1,13 @@
+{
+  "name": "october3.10--backendcrudfood",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["rutas","controlador","BD mongoDB","middlewares"],
+  "author": "dev.BboyLinkin",
+  "license": "ISC",
+  "type":"module"
+}
