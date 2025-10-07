@@ -23,11 +23,11 @@ export default class Server {
         const __dirname = dirname(fileURLToPath(import.meta.url))
         console.log(__dirname)
         console.log(__dirname + "/public")
-        this.app.use(express.static(__dirname + '/public'))
+        this.app.use(express.static(__dirname + '/../../public'))
     }
 
     listen(){
-        this.app.listen(this.port, ()=>console.info(`Servidor corriendo en puerto ${this.port}`))
+        this.app.listen(this.port, ()=>console.info(`Servidor corriendo en puerto : http://localhost:${this.port}`))
     }
 
 }
