@@ -1,11 +1,11 @@
 import mongoose,{Schema} from "mongoose";
 
-const productoSchema = new schema({
+const productoSchema = new Schema({
     nombreProducto: {
         type:String,
         minLength:3,
         maxLength:50,
-        required:true
+        required:true,
         unique:true
     },
     precio:{
