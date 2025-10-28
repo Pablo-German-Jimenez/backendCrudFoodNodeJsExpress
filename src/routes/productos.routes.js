@@ -1,5 +1,5 @@
 import { Router } from 'express'
-import { crearProducto, prueba } from '../controllers/productos.controllers.js';
+import { crearProducto, prueba, listarProductos, obtenerProducto, borrarProductoPorID, editarProductoPorID } from '../controllers/productos.controllers.js';
 
 /*
 GET
@@ -12,5 +12,6 @@ DELETE
 const  router = Router()
 
 router.route('/test').get(prueba) 
-router.route('/').post(crearProducto)
+router.route('/').post(crearProducto).get(listarProductos)
+router.route("/:id").get(obtenerProducto).delete(borrarProductoPorID).put(editarProductoPorID);
 export default router;
